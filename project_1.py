@@ -4,12 +4,10 @@ from reportlab.pdfgen import canvas
 from reportlab.lib import colors
 
 
-pdf_path = "D:\python\python_Project\Text-to-pdf-converter\text_to_pdf.pdfpy"
-
+pdf_path = "D:/python/python_Project/Text-to-pdf-converter/text_to_pdf.pdf"  
 directory = os.path.dirname(pdf_path)
 if not os.path.exists(directory):
-    os.makedirs(directory)
-    
+ os.makedirs(directory)
 c = canvas.Canvas(pdf_path, pagesize=letter)
 c.setFont("Helvetica-Bold", 16)
 c.setFillColor(colors.darkblue)
